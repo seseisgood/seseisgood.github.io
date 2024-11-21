@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Editorial</title>
+
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96FTBFT5KW"></script>
+
+    <!-- JavaScript Functions for Image Preload and Swap Effects -->
+    <script>
+        function MM_preloadImages() {
+            var d = document;
+            if (d.images) { 
+                if (!d.MM_p) d.MM_p = [];
+                var a = MM_preloadImages.arguments;
+                for (let i = 0; i < a.length; i++) {
+                    if (a[i].indexOf("#") !== 0) {
+                        d.MM_p[d.MM_p.length] = new Image;
+                        d.MM_p[d.MM_p.length - 1].src = a[i];
+                    }
+                }
+            }
+        }
+
+        function MM_swapImgRestore() {
+            var a = document.MM_sr;
+            for (let i = 0; a && i < a.length; i++) {
+                a[i].src = a[i].oSrc;
+            }
+        }
+
+        function MM_findObj(n, d = document) {
+            let x = d[n] || d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() {
+            var a = MM_swapImage.arguments;
+            document.MM_sr = [];
+            for (let i = 0; i < a.length - 2; i += 3) {
+                let x = MM_findObj(a[i]);
+                if (x) {
+                    document.MM_sr[document.MM_sr.length] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+            }
+        }
+    </script>
+
+    <!-- Styles for Page Layout -->
+    <style>
+        /* Basic Reset and Layout */
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #FEF9F2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header Styling */
+        #header {
+            background: linear-gradient(180deg, rgba(238, 163, 164, 1.00) 0%, rgba(254, 249, 242, 1.00) 100%);
+            color: #F9BDBD;
+            font-size: 36pt;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px #7EA3C2;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        #nav2 ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #7EA3C2;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 3px solid #0FF;
+        }
+
+        #nav2 ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        #nav2 ul li a {
+            color: #0FF;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        #nav2 ul li a:hover {
+            background-color: #FFE3E3;
+            color: #7EA3C2;
+        }
+
+        /* Section Containers */
+        #yellow, #blue, .list_left_down {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #yellow {
+            background-color: #7EA3C2;
+        }
+
+        #blue {
+            background-color: #FFE3E3;
+        }
+
+        /* List Section */
+        .list_left_down {
+            background-color: #C9E9D2;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Footer Styling */
+        #footer {
+            background-color: #92DBAE;
+            color: #7EAFCD;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 3px 3px 5px #559FCE;
+        }
+    </style>
+</head>
+
+<body onload="MM_preloadImages('images/peer2.jpg', 'images/banner copy.jpg')">
+
+    <!-- Navigation -->
+   
+    
+    <div id="nav2">
+        <ul>
+		<li><a href="frontpage.html">Front</a></li>
+    <li><a href="index.html">Main</a></li>
+    <li><a href="editorialteam.html">Editorial Team</a></li>
+    <li><a href="peerreview.html">Peer Review</a></li>
+    <li><a href="Plagiarism.html">Plagiarism</a></li>
+			<li><a href="thankyou.html">Feedback</a></li>
+</ul>
+
+    </div>
+
+    <!-- Header Image with MouseOver Effect -->
+    <div id="header" onmouseover="MM_swapImage('Image1','','images/banner copy.jpg',1)">
+        <img src="images/banner.jpg" alt="Banner Image" width="900" height="120" id="Image1"/>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div id="yellow">
+        <h3>Peer Review</h3>
+        <p>Peer review is a vital process ensuring the quality of accepted and published papers. Experts review submissions to assess relevance, originality, and presentation. Authors receive feedback to refine their papers before publication.</p>
+        <div id="p2">
+            <img src="images/journal.jpeg" width="200" height="267" alt="Journal Cover" />
+        </div>
+    </div>
+
+    <div id="blue">
+        <p>The Journal uses a double-blind peer review process to ensure fair editorial decisions. Reviewers can accept or reject submissions based on merit. The Editorial Team, following reviewer recommendations, may accept, request revisions, or reject submissions.</p>
+        <img src="images/peer.jpg" alt="Peer Review" width="500" height="250" id="Image2" onmouseover="MM_swapImage('Image2','','images/peer2.jpg',1)" onmouseout="MM_swapImgRestore()"/>
+    </div>
+
+    <!-- Journal Information Links -->
+    <div class="list_left_down">
+        <h3>Journal Information</h3>
+        <p>eISSN: 2805-5160</p>
+        <ul>
+             <li><a href="index.html">About the Journal</a></li>
+            <li><a href="editorialteam.html">Editorial Team</a></li>
+            <li><a href="peerreview.html">Peer Review</a></li>
+            <li><a href="Plagiarism.html">Plagiarism</a></li>
+        </ul>
+    </div>
+
+  
+    <!-- Footer -->
+    <div id="footer">Footer</div>
+
+</body>
+</html>
+
+   
+ 
+

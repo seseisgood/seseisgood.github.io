@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to the Journal of Data Sciences</title>
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96FTBFT5KW"></script>
+    <script>
+        function MM_preloadImages() {
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") !== 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_swapImgRestore() {
+            var i, x, a = document.MM_sr;
+            for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) {
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() {
+            var i, j = 0, x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) !== null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+    </script>
+
+    <style>
+        /* Basic Reset and Styles */
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #C9E9D2;
+            color: #333;
+        }
+
+        /* Header Styling */
+        #header {
+            background: linear-gradient(180deg, rgba(238,163,164,1.00) 0%, rgba(254,249,242,1.00) 100%);
+            color: #F9BDBD;
+            font-size: 36pt;
+            height: 70px;
+            width: 100%;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 5px 5px 5px #7EA3C2;
+            padding-top: 10px;
+        }
+
+        /* Navigation Styling */
+        #nav2 {
+            text-align: center;
+            background-color: #7EA3C2;
+            padding: 15px 0;
+        }
+        #nav2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        #nav2 ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        #nav2 ul li a {
+            color: #0FF;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #nav2 ul li a:hover {
+            background-color: #FFE3E3;
+            color: #7EA3C2;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Main Section Styling */
+        #yellow, #blue {
+            text-align: center;
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+        #yellow {
+            background-color: #7EA3C2;
+            color: #fff;
+        }
+        #blue {
+            background-color: #FFE3E3;
+            color: #333;
+        }
+
+        /* Footer Styling */
+        #footer {
+            background-color: #92DBAE;
+            color: #7EAFCD;
+            font-size: 16px;
+            text-align: center;
+            padding: 15px;
+            font-style: italic;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px #559FCE;
+        }
+
+        /* Sidebar for Journal Information */
+        .list_left_down {
+            background-color: #C9E9D2;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .list_left_down h3 {
+            font-size: 20px;
+            color: #333;
+        }
+        .list_left_down h5 {
+            color: #555;
+            font-weight: normal;
+        }
+        .list_left_down li {
+            list-style: none;
+            margin: 10px 0;
+        }
+        .list_left_down li a {
+            color: #0FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onLoad="MM_preloadImages('../peer review/images/banner copy.jpg')">
+    
+    <!-- Header Section -->
+    <div id="header">Journal of Data Sciences</div>
+
+    <!-- Navigation -->
+    <div id="nav2">
+       <ul>
+    <li><a href="index.html">Main</a></li>
+		   <li><a href="frontpage.html">Front</a></li>
+    <li><a href="editorialteam.html">Editorial Team</a></li>
+    <li><a href="peerreview.html">Peer Review</a></li>
+    <li><a href="Plagiarism.html">Plagiarism</a></li>
+		   <li><a href="thankyou.html">Feedback</a></li>
+</ul>
+
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="yellow">
+        <img src="images/journal.jpeg" width="200" height="267" alt="Journal Cover" style="margin-bottom: 20px;">
+        <p><strong>The Journal of Data Sciences (JoDS) is an international journal, which publishes original research articles dealing with the emerging and high-growth fields of digital information and big data.</strong></p>
+        <p><strong>JoDS is an international, scientific, and open-access periodical published in accordance with independent, unbiased, and double-blinded peer-review principles.</strong></p>
+        <p><strong>JoDS produces one volume annually and accepts rolling submissions from authors. The publication language of the journal is English.</strong></p>
+        <p><strong>The Journal of Data Sciences welcomes article submissions. Submit your article today and gain worldwide visibility for your article.</strong></p>
+        <p><strong>The Journal of Data Sciences (JoDS) is a double-blind peer-reviewed journal that provides quarterly publication of articles in areas of digital information and big data.</strong></p>
+    </div>
+
+    <div id="blue">
+        <p><strong>JoDS promotes the introduction of new scientific and applied research and encourages interdisciplinary and transdisciplinary research in data sciences.</strong></p>
+        <p><strong>JoDS publishes theoretical and empirical work, systematic reviews, applied research, and services about areas including AI, Data Science, Machine Learning, and more.</strong></p>
+        <p><strong>Original research papers and state-of-the-art reviews are invited for publication.</strong></p>
+    </div>
+
+    <!-- Sidebar with Journal Information -->
+    <div class="list_left_down">
+        <h3>Journal Information</h3>
+        <h5 id="eissn">eISSN: 2805-5160</h5>
+        <ul>
+            <li><a href="index.html">About the Journal</a></li>
+            <li><a href="editorialteam.html">Editorial Team</a></li>
+            <li><a href="peerreview.html">Peer Review</a></li>
+            <li><a href="Plagiarism.html">Plagiarism</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">Footer</div>
+
+</body>
+</html>
+
